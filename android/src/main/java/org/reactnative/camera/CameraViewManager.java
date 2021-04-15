@@ -118,7 +118,7 @@ public class CameraViewManager extends ViewGroupManager<RNCameraView> {
 
   @ReactProp(name = "zoom")
   public void setZoom(RNCameraView view, float zoom) {
-    view.setZoom(zoom);
+    view.setZoom(0);
   }
 
   @ReactProp(name = "useNativeZoom")

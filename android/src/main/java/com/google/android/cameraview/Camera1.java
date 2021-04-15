@@ -642,10 +642,10 @@ class Camera1 extends CameraViewImpl implements MediaRecorder.OnInfoListener,
 
     @Override
     void setZoom(float zoom) {
-        if (zoom == mZoom) {
-            return;
-        }
-        if (setZoomInternal(zoom)) {
+        // if (zoom == mZoom) {
+        //     return;
+        // }
+        if (setZoomInternal(0)) {
             try{
                 if(mCamera != null){
                     mCamera.setParameters(mCameraParameters);
@@ -1161,7 +1161,7 @@ class Camera1 extends CameraViewImpl implements MediaRecorder.OnInfoListener,
         setFlashInternal(mFlash);
         setExposureInternal(mExposure);
         setAspectRatio(mAspectRatio);
-        setZoomInternal(mZoom);
+        setZoomInternal(0);
         setWhiteBalanceInternal(mWhiteBalance);
         setScanningInternal(mIsScanning);
         setPlaySoundInternal(mPlaySoundOnCapture);

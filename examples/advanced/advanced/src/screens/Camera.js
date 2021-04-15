@@ -1021,7 +1021,7 @@ class Camera extends Component{
 
 
   resetZoom = () => {
-    this._prevPinch = 1;
+    this._prevPinch = 0;
     this.setState({zoom: 0});
   }
 }

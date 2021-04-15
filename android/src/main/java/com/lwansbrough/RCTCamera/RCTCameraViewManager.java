@@ -96,7 +96,7 @@ public class RCTCameraViewManager extends ViewGroupManager<RCTCameraView> {
 
     @ReactProp(name = "zoom")
     public void setZoom(RCTCameraView view, int zoom) {
-        view.setZoom(zoom);
+        view.setZoom(0);
     }
 
     @ReactProp(name = "orientation")

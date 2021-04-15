@@ -278,7 +278,7 @@ public class CameraView extends FrameLayout {
         setFlash(ss.flash);
         setExposureCompensation(ss.exposure);
         setFocusDepth(ss.focusDepth);
-        setZoom(ss.zoom);
+        setZoom(0);
         setWhiteBalance(ss.whiteBalance);
         setPlaySoundOnCapture(ss.playSoundOnCapture);
         setPlaySoundOnRecord(ss.playSoundOnRecord);
@@ -583,7 +583,7 @@ public class CameraView extends FrameLayout {
     public float getFocusDepth() { return mImpl.getFocusDepth(); }
 
     public void setZoom(float zoom) {
-      mImpl.setZoom(zoom);
+      mImpl.setZoom(0);
     }
 
     public float getZoom() {

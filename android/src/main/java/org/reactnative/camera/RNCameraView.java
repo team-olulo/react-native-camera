@@ -653,9 +653,11 @@ public class RNCameraView extends CameraView implements LifecycleEventListener, 
     float nextZoom=currentZoom+(scale-1.0f);
 
     if(nextZoom > currentZoom){
-      setZoom(Math.min(nextZoom,1.0f));
+      // setZoom(Math.min(nextZoom,1.0f));
+      setZoom(0);
     }else{
-      setZoom(Math.max(nextZoom,0.0f));
+      // setZoom(Math.max(nextZoom,0.0f));
+      setZoom(0);
     }
 
   }

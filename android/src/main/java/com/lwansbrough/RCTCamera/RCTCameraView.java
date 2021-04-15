@@ -78,9 +78,9 @@ public class RCTCameraView extends ViewGroup {
             if (-1 != this._torchMode) {
                 _viewFinder.setTorchMode(this._torchMode);
             }
-            if (0 != this._zoom) {
-                _viewFinder.setZoom(this._zoom);
-            }
+            // if (0 != this._zoom) {
+                _viewFinder.setZoom(0);
+            // }
             _viewFinder.setClearWindowBackground(this._clearWindowBackground);
             addView(_viewFinder);
         }
@@ -117,7 +117,7 @@ public class RCTCameraView extends ViewGroup {
     public void setZoom(int zoom) {
         this._zoom = zoom;
         if (this._viewFinder != null) {
-            this._viewFinder.setZoom(zoom);
+            this._viewFinder.setZoom(0);
         }
     }
 

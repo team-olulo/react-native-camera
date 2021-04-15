@@ -481,7 +481,7 @@ class RCTCameraViewFinder extends TextureView implements TextureView.SurfaceText
                 zoom--;
         }
         mFingerSpacing = newDist;
-        params.setZoom(zoom);
+        params.setZoom(0);
         try{
           _camera.setParameters(params);
         }
